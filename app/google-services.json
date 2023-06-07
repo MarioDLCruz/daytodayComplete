@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "839566517272",
+    "project_id": "day-to-day-7e0e0",
+    "storage_bucket": "day-to-day-7e0e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839566517272:android:e807f393e52eef1f498f6d",
+        "android_client_info": {
+          "package_name": "mx.ita.daytoday"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK8brLsjAKid4zCrEnIpWBujC4GGobQs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

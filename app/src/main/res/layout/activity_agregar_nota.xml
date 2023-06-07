@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarNota.Agregar_Nota">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--UID USUARIO-->
+        <TextView
+            android:id="@+id/uid_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/uid_usuario"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:fontFamily="@font/robotoslab"/>
+
+        <!--CORREO USUARIO-->
+        <TextView
+            android:id="@+id/correo_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo_usuario"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:fontFamily="@font/robotoslab"/>
+
+        <!--icono y textview-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--ICONO-->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fecha_hora_registro"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_hora_actual_TXT"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/robotoslab"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--FECHA Y HORA ACTUAL DISPOSITIVO-->
+        <TextView
+            android:id="@+id/fecha_hora_actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/fecha_hora_actual"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/robotoslab"/>
+
+        <!--TITULO-->
+        <EditText
+            android:fontFamily="@font/robotoslab"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/titulo"
+            android:hint="@string/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--DESCRIPCION-->
+        <EditText
+            android:gravity="start"
+            android:minHeight="150dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:id="@+id/descripcion"
+            android:hint="@string/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--BOTON ABRIR CALENDARIO-->
+            <Button
+                app:icon="@drawable/icono_calendario"
+                android:id="@+id/btn_calendario"
+                android:text="@string/btn_calendario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--VISUALIZAR FECHA ELEGIDA-->
+            <TextView
+                android:id="@+id/fecha"
+                android:hint="@string/fecha"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/robotoslab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--ESTADO DE LA NOTA-->
+        <TextView
+            android:fontFamily="@font/robotoslab"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:id="@+id/estado"
+            android:text="@string/estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
+

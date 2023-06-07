@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:padding="0.2dp"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!--ICONO-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icono_item_nota">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="7dp">
+
+            <!--uID NOTA-->
+            <TextView
+                android:id="@+id/id_nota_item"
+                android:text="@string/id_nota_item"
+                android:visibility="gone"
+                android:fontFamily="@font/robotoslab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--UID USUARIO NOTA-->
+            <TextView
+                android:id="@+id/uid_usuario_item"
+                android:text="@string/uid_usuario_item"
+                android:visibility="gone"
+                android:fontFamily="@font/robotoslab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--CORREO USUARIO NOTA-->
+            <TextView
+                android:id="@+id/correo_usuario_item"
+                android:text="@string/correo_usuario_item"
+                android:visibility="gone"
+                android:fontFamily="@font/robotoslab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--FECHA Y HORA DE REGISTRO-->
+            <TextView
+                android:id="@+id/fecha_hora_registro_item"
+                android:text="@string/fecha_hora_registro_item"
+                android:visibility="gone"
+                android:fontFamily="@font/robotoslab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--TITULO NOTA-->
+            <TextView
+                android:id="@+id/titulo_item"
+                android:text="@string/titulo_item"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/robotoslab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--DESCRIPCION NOTA-->
+            <TextView
+                android:id="@+id/descripcion_item"
+                android:text="@string/descripcion_item"
+                android:textSize="18sp"
+                android:fontFamily="@font/robotoslab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <!--FECHA NOTA-->
+            <TextView
+                android:id="@+id/fecha_item"
+                android:text="@string/fecha_item"
+                android:textSize="18sp"
+                android:fontFamily="@font/robotoslab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--ESTADO DE LA NOTA-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/Tarea_Finalizada_Item"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:background="#16A085"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/Tarea_No_Finalizada_Item"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginStart="5dp"
+                    android:background="#E74C3C"/>
+
+
+                <!--Estado de la nota-->
+                <TextView
+                    android:id="@+id/Estado_Item"
+                    android:text="@string/estado_item"
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/robotoslab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
